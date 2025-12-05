@@ -2,7 +2,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
 
-/* var */
 
 :root {
     --background: #f0e8e8;
@@ -14,7 +13,7 @@
     --pagefont: 'Open Sans', sans-serif;
 }
 
-/* all */
+
 
 * {
     margin: 0;
@@ -32,7 +31,6 @@ body {
     width: 980px;
 }
 
-/* header */
 
 header {
     background-color: var(--darkblue);
@@ -77,7 +75,7 @@ header {
     flex-direction: column;
 }
 
-/* menu */
+
 
 .navmenu {
     margin-top: 62px;
@@ -107,16 +105,16 @@ header {
     color: var(--lightblue);
 }
 
-/* main */
+
 
 main {
     background-color: white;
     padding-top: 93px;
 }
 
-/* estilos para a tabela de mensagens */
+
 #tabela {
-    border-collapse: collapse; /* bordas das células se unem */
+    border-collapse: collapse; 
     width: 100%;
     font-family: var(--pagefont);
 }
@@ -133,7 +131,6 @@ main {
     font-weight: 700;
 }
 
-/* zebra e hover */
 #tabela tbody tr:nth-child(even) {
     background-color: #fafafa;
 }
@@ -157,7 +154,6 @@ main {
     bottom: 220px;
 }
 
-/* principal */
 
 #principal {
     font-style: italic;
@@ -200,7 +196,7 @@ main {
     font-size: 1.2em;
 }
 
-/* topics */
+
 
 .topics {
     display: grid;
@@ -258,7 +254,6 @@ main {
     column-gap: 5px;
 }
 
-/* aluguel */
 
 .aluguel {
     max-width: 930px;
@@ -286,7 +281,7 @@ main {
     font: italic 400 1.2em var(--pagefont);
 }
 
-/* destinos */
+
 
 .destination {
     max-width: 900px;
@@ -315,7 +310,6 @@ main {
     font: italic 400 1.2em var(--pagefont);
 }
 
-/* tripulação */
 
 .trip {
     margin: 0 50px;

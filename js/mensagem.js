@@ -3,7 +3,6 @@ if (localStorage.getItem("logado") !== "true") {
     window.location.href = "login.html";
 }
 
-// Local fallback para mensagens visualizadas
 const LOCAL_VIS_KEY = "mensagens_visualizadas";
 
 function getVisualizadasLocal() {
@@ -47,7 +46,7 @@ function carregarMensagens() {
     tbody.innerHTML = "";
 
     lista.forEach((msg) => {  
-        // combina estado vindo do servidor com fallback local
+        
         const localVis = isVisualizadaLocal(msg.id);
         const vis = msg.visualizada || localVis;
         const fontWeight = vis ? 'normal' : 'bold';
@@ -73,7 +72,7 @@ function carregarMensagens() {
 
 function visualizarMensagem(id) {  
     if (confirm("Deseja marcar esta mensagem como visualizada?")) {
-        // tenta no servidor primeiro
+        
         try {
             const ok = marcarVisualizada(id);
             if (ok) {
@@ -84,7 +83,7 @@ function visualizarMensagem(id) {
             console.error('marcarVisualizada threw', e);
         }
 
-        // fallback local: alterna o estado no localStorage
+      
         if (isVisualizadaLocal(id)) {
             removeVisualizadaLocal(id);
             alert('Mensagem desmarcada localmente.');
@@ -96,7 +95,7 @@ function visualizarMensagem(id) {
     }
 }
 
-// Excluir
+
 function excluirMensagem(id) {
     console.log("excluirMensagem() chamada com id =", id);
 
@@ -105,7 +104,7 @@ function excluirMensagem(id) {
         return;
     }
 
-    let ok = deletarMensagem(id); // chama a do api.js
+    let ok = deletarMensagem(id); 
 
     console.log("Resposta deletarMensagem:", ok);
 
