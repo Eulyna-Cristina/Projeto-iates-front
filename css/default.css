@@ -318,7 +318,6 @@ main {
     line-height: 1.5em;
 }
 
-/* contato */
 
 form {
     padding: 0 10px 20px;
@@ -377,7 +376,6 @@ textarea {
     cursor: pointer;
 }
 
-/* footer */
 
 footer {
     font-size: 0.75em;
@@ -392,7 +390,6 @@ footer p {
     text-indent: 15px;
 }
 
-/* Botões da tabela de mensagens */
 .btn-visualizar {
     background-color: #28a745;
     color: white;
@@ -428,7 +425,6 @@ main button:last-child:hover {
     background: #e9eceb;
 }
 
-/* botões da tabela de mensagens */
 .btn-visualizar {
     background-color: #1bb4e8;
     color: white;
@@ -461,7 +457,6 @@ main button:last-child:hover {
     background-color: #d63b3b;
 }
 
-/* título da página de mensagens */
 .titulo-mensagens {
     text-align: center;
     font-size: 2.2em;
@@ -476,7 +471,6 @@ main button:last-child:hover {
     z-index: 2;
 }
 
-/* ===== Login Administrador ===== */
 main form {
     background-color: white;
     border-radius: 8px;
