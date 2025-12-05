@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Mensagens - Luxo</title>
+    <link rel="stylesheet" href="css/default.css">
+</head>
+
+<body>
+    <div class="page">
+        <header>
+        </header>
+
+        <main>
+            <h1 class="titulo-mensagens">Mensagens recebidas</h1>
+            
+            <table width="100%" id="tabela">
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>E-mail</th>
+                        <th>Mensagem</th>
+                        <th>Visualizar</th>
+                        <th>Excluir</th>
+                    </tr>
+                </thead>
+                <tbody id="listaMensagens"></tbody>
+            </table>
+            
+            <br>
+            <button class="btn-sair" onclick="sair()">Sair</button>
+
+        </main>
+    </div>
+
+    <script src="js/jquery-3.6.4.min.js"></script>
+    <script src="js/api.js"></script>
+    <script src="js/mensagem.js"></script>
+</body>
+</html>
